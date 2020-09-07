@@ -6,6 +6,7 @@ var rightAns = 0;
 var winAudio = new Audio('sound/win.wav');
 var mainCard = document.getElementById('maincard');
 var choices = document.getElementsByClassName('choice');
+var msg = 'Congratulations you have earned ESP!';
 
 for (i = 0; i < choices.length; i++) {
     let choice = choices[i];
@@ -25,9 +26,9 @@ for (i = 0; i < choices.length; i++) {
         if (noOfGuess == 0) {
             mainCard.src = 'images/back.svg';
             if (rightAns >= pass) {
-                alert('Congratulations you have earned ESP!');
+              alert('Your score is: ' + rightAns + "\n" + msg);
             } else {
-                alert('Sorry you did not earn ESP!');
+                alert('Your score is: ' + rightAns + 'Sorry you did not earn ESP!');
             }
         }
     });
