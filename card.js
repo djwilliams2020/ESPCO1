@@ -28,7 +28,7 @@ for (i = 0; i < choices.length; i++) {
             if (rightAns >= pass) {
               alert('Your score is: ' + rightAns + "\n" + msg);
             } else {
-                alert('Your score is: ' + rightAns + 'Sorry you did not earn ESP!');
+                alert('Your score is: ' + rightAns + "\n" + 'Sorry you did not earn ESP!');
             }
         }
     });
