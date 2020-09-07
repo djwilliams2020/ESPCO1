@@ -25,9 +25,9 @@ for (i = 0; i < choices.length; i++) {
         if (noOfGuess == 0) {
             mainCard.src = 'images/back.svg';
             if (rightAns >= pass) {
-                alert('Congratulations you haveESP!');
+                alert('Congratulations you have earned ESP!');
             } else {
-                alert('Sorry you did not get ESP!');
+                alert('Sorry you did not earn ESP!');
             }
         }
     });
