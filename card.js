@@ -26,6 +26,8 @@ for (i = 0; i < choices.length; i++) {
             window.navigator.vibrate(200);
         }
         noOfGuess--;
+        document.getElementById('guess').innerHTML = "Guess:" + noOfGuess;
+        
         if (noOfGuess == 0) {
             mainCard.src = 'images/back.svg';
             if (rightAns >= pass) {
@@ -33,6 +35,7 @@ for (i = 0; i < choices.length; i++) {
             } else {
                 alert('Your score is: ' + rightAns + "\n" + 'Sorry you did not earn ESP!');
             }
+            location.reload();
         }
     });
 }
