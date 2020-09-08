@@ -7,6 +7,7 @@ var winAudio = new Audio('sound/win.wav');
 var mainCard = document.getElementById('maincard');
 var choices = document.getElementsByClassName('choice');
 var msg = 'Congratulations you have earned ESP!';
+var score =0;
 
 for (i = 0; i < choices.length; i++) {
     let choice = choices[i];
@@ -17,6 +18,8 @@ for (i = 0; i < choices.length; i++) {
         console.log(this.id);
         mainCard.src = 'images/' + current + '.svg';
         if (current == this.id) {
+            score++
+            document.getElementById('score').innerHTML = "score:" + score;
             rightAns++;
             winAudio.play();
         } else {
