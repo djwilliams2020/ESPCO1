@@ -44,7 +44,7 @@ for (i = 0; i < choices.length; i++) {
                 alert('Your score is: ' + rightAns + "\n" + 'Sorry you did not earn ESP!');
 
 =======
-        
+
         if (noOfGuess == 0) {
             mainCard.src = 'images/back.svg';
             if (rightAns >= pass) {
