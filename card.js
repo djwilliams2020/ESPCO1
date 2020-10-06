@@ -1,4 +1,4 @@
-
+ 
 var noOfGuess = 10;
 var pass = 5;
 var guessChoices = ['star', 'circle', 'square', 'wave', 'plus'];
