@@ -7,11 +7,8 @@ var winAudio = new Audio('sound/win.wav');
 var mainCard = document.getElementById('maincard');
 var choices = document.getElementsByClassName('choice');
 var msg = 'Congratulations you have earned ESP!';
-<<<<<<< HEAD
 var score = 0;
-=======
-var score =0;
->>>>>>> 497826f9e72cb2126df7729a589265787407c23d
+var score = 0;
 
 for (i = 0; i < choices.length; i++) {
     let choice = choices[i];
@@ -35,7 +32,6 @@ for (i = 0; i < choices.length; i++) {
         }
         noOfGuess--;
         document.getElementById('guess').innerHTML = "Guess:" + noOfGuess;
-<<<<<<< HEAD
         if (noOfGuess == 0) {
             mainCard.src = 'images/back.svg';
             if (rightAns >= pass) {
@@ -43,15 +39,6 @@ for (i = 0; i < choices.length; i++) {
             } else {
                 alert('Your score is: ' + rightAns + "\n" + 'Sorry you did not earn ESP!');
 
-=======
-
-        if (noOfGuess == 0) {
-            mainCard.src = 'images/back.svg';
-            if (rightAns >= pass) {
-              alert('Your score is: ' + rightAns + "\n" + msg);
-            } else {
-                alert('Your score is: ' + rightAns + "\n" + 'Sorry you did not earn ESP!');
->>>>>>> 497826f9e72cb2126df7729a589265787407c23d
             }
             location.reload();
         }
