@@ -35,23 +35,13 @@ for (i = 0; i < choices.length; i++) {
         }
         noOfGuess--;
         document.getElementById('guess').innerHTML = "Guess:" + noOfGuess;
-<<<<<<< HEAD
-        if (noOfGuess == 0) {
-            mainCard.src = 'images/back.svg';
-            if (rightAns >= pass) {
-                alert('Your score is: ' + rightAns + "\n" + msg);
-            } else {
-                alert('Your score is: ' + rightAns + "\n" + 'Sorry you did not earn ESP!');
-
-=======
-
         if (noOfGuess == 0) {
             mainCard.src = 'images/back.svg';
             if (rightAns >= pass) {
               alert('Your score is: ' + rightAns + "\n" + msg);
             } else {
                 alert('Your score is: ' + rightAns + "\n" + 'Sorry you did not earn ESP!');
->>>>>>> 497826f9e72cb2126df7729a589265787407c23d
+ 
             }
             location.reload();
         }
